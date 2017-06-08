@@ -1,0 +1,299 @@
+        * {
+        box-sizing: border-box;
+    }
+    
+    .hidden {
+        visibility: hidden;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+    
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: Lato, Arial, monospace;
+    }
+    
+    .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 550px;
+    }
+    /*------------------section 1---------------*/
+    
+    #gradient {
+        background: #836997;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 550px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .push-ups {
+        height: 100%;
+        padding-top: 20px;
+        position: absolute;
+        top: 30px;
+    }
+    
+    /*-----------------section 2--------------*/
+    
+    #section2 {
+        margin: 0 auto;
+        height: 255px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .header {
+        margin: 0;
+        font-weight: 700;
+        font-size: 7em;
+        letter-spacing: 1px;
+        text-align: center;
+        text-shadow: 1px 1px 10px #948D8D;
+        color: #625F5F;
+    }
+    
+    .sub {
+        padding: 0;
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+        color: grey;
+    }
+    
+    /*-----------------section 3----------------*/
+    
+    #section3 {
+        width: 100vw;
+        height: 100vh;
+        background-color: #EFEEEA;
+    }
+    
+    .timer {
+        width: 500px;
+        position: relative;
+        top: 65px;
+    }
+    
+    .timer-txt {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 300;
+        letter-spacing: 0.2px;
+        line-height: 35px;
+        text-align: center;
+        color: #8C8B87;
+        position: relative;
+        top: -40px;
+    }
+    
+    #section3 span {
+        font-weight: 700;
+        color: #8C8B87;
+    }
+    /*------------section 4----------------*/
+    
+    #section4 {
+        background-color: #FFE317;
+        height: 100%;
+    }
+    
+    #section4 h1 {
+        font-weight: 700;
+        font-size: 48px;
+        position: relative;
+        top: 40px;
+        color: #625F5F;
+        letter-spacing: 0.5px;
+    }
+    
+    #section4 h3 {
+        word-break: break-all;
+        font-weight: 700;
+        font-size: 1.5em;
+        letter-spacing: 0.5px;
+        color: #625F5F;
+    }
+    
+    #section4 p {
+        font-weight: 300;
+        font-size: 1em;
+        color: #625F5F;
+        text-align: justify;
+        line-height: 22px;
+    }
+    
+    .benefits-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 100px;
+    }
+    
+    .benefit {
+        width: 33.3%;
+        padding: 0 70px 70px 0;
+        padding-bottom: 0;
+    }
+    /*---------------section 5------------*/
+    
+    #section5 {
+        width: 100vw;
+        height: 100%;
+    }
+    
+    #section5 h1 {
+        font-weight: 700;
+        font-size: 48px;
+        position: relative;
+        top: 50px;
+        color: #625F5F;
+        letter-spacing: 0.5px;
+        z-index: 1;
+    }
+    
+    #section5 img {
+        margin: 0 auto;
+    }
+    
+    #container {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        position: relative;
+        top: -35px;
+        width: 70vw;
+    }
+    
+    #gifs {
+        margin: 0 auto;
+    }
+    
+    #left_botton {
+        width: 100px;
+        height: 450px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    #right_botton {
+        width: 100px;
+        height: 450px;
+        position: absolute;
+        right: -20px;
+        top: 0;
+    }
+    
+    .left {
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        position: absolute;
+        top: 40%;
+        left: -80px;
+    }
+    
+    .right {
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        position: absolute;
+        top: 40%;
+        right: -80px;
+    }
+    /*---------------section 6-----------*/
+    
+    #section6 {
+        background-color: #FFE317;
+        height: 150px;
+    }
+    
+    .download-app {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .download-app h2 {
+        color: #625F5F;
+        font-weight: 400;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    
+    .download-app span {
+        font-weight: 700;
+        font-size: 1.4em;
+        color: #444;
+    }
+    
+    .download-app img {
+        width: 210px;
+    }
+    
+    .download-app img:hover {
+        width: 225px;
+    }
+    /*----------------------------------*/
+    /* Media*/
+    /*----------------------------------*/
+    
+    @media screen and (max-width:750px) {
+        .header {
+            font-size: 5em;
+        }
+        .timer {
+            width: 70%;
+        }
+        .timer-txt {
+            padding: 25px;
+        }
+        #section4 h1 {
+            font-size: 2.2em;
+            padding: 20px;
+        }
+        .benefits-container {
+            height: 100%;
+            margin: 20px;
+            padding: 10px;
+        }
+        .benefit {
+            margin: 10px;
+            margin-bottom: 0;
+            width: 100%;
+            overflow: auto;
+        }
+        #section5 {
+            display: none;
+        }
+        .download-app {
+            background-color: #fff;
+        }
+        .download-app h2 {
+            padding: 0 60px 0 60px;
+        }
+        .download-app {
+            padding: 30px;
+        }
+        #section6 {
+            height: 100%;
+        }
